@@ -65,7 +65,7 @@ def play():
                 letter=input("Your letter: ")
                 if(is_present(letter,picked_movie)):
                     #unlock the encoded char
-                    modified_qn=unlock(modified_qn,picked_movie,ch)
+                    modified_qn=unlock(modified_qn,picked_movie,letter)
                     print(modified_qn)
                     d=input("Press 1 to guess the movie or 2 to unlock another letter: ")
                     if d==1:
@@ -98,7 +98,7 @@ def play():
                 letter=input("Your letter: ")
                 if(is_present(letter,picked_movie)):
                     #unlock the encoded char
-                    modified_qn=unlock(modified_qn,picked_movie,ch)
+                    modified_qn=unlock(modified_qn,picked_movie,letter)
                     print(modified_qn)
                     d=input("Press 1 to guess the movie or 2 to unlock another letter: ")
                     if d==1:
